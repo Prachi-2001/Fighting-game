@@ -145,8 +145,11 @@ class Game {
 }
 
 // ** Create 2 players using the player class **
-let player1 = new Player('Lance', 100, 15)
-let player2 = new Player('Qazi', 100, 15)
+const play1 = prompt("Enter Player1 name")
+const play2 = prompt("Enter Player2 name")
+
+let player1 = new Player(play1, 100, 15)
+let player2 = new Player(play2, 100, 15)
 
 
 // ** Save original Player Health in order to reset **
